@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# consider last argument is always file
+file="${@: -1}"
+# remove last argument
+set -- "${@:1:$(($#-1))}"
+
+cat "$file" | docker run --rm -i copl-tools checker "$@"
