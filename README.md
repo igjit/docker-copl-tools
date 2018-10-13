@@ -15,3 +15,9 @@ Run derivation checker.
 ```sh
 echo 'Z plus Z is Z ?' | docker run --rm -i copl-tools checker -game Nat
 ```
+
+or
+
+```sh
+bin/checker -game Nat file.copl
+```
