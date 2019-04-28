@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ENV PROJ_DIR=/opt/copl-tools
 
-RUN apt update -y \
+RUN apt update \
         && apt install -y git build-essential ocaml-nox \
         && rm -rf /var/lib/apt/lists/*
 
